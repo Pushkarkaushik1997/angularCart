@@ -7,6 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Middle2Component implements OnInit {
 
+  flag = true;
+
+  change(){
+    if(this.flag==true){
+      this.flag=false;
+    }
+    else if(this.flag==false)
+    {
+      this.flag=true;
+    }
+
+  }
+
   constructor() { }
 
   ngOnInit() {
